@@ -1,0 +1,8 @@
+html
+    body
+        ul  
+            for value in Values
+                li=value.BoardId
+                ul
+                    for worklogValue in value.Values
+                        li=`${worklogValue.Started.toDateString()}-${worklogValue.Key}-${worklogValue.Time}`
